@@ -16,4 +16,4 @@ geliştirilmiş, tamamen offline çalışan bir soru-cevap chatbot'u.
 - Python
 
 ## Demo Video
-[🎥 Sunum Videosunu İzle](./sunum_video.mp4)
+🎥 Sunum Videosunu İzle https://drive.google.com/file/d/18bpN0dGlqM3uJdrWNebZ2GeueFmFcQD-/view?usp=sharing
