@@ -1,19 +1,74 @@
-# Python Öğrenme Asistanı - Yerel RAG Uygulaması
+# 🐍 Python Öğrenme Asistanı
 
-Microsoft Foundry Local ve RAG (Retrieval-Augmented Generation) mimarisi kullanarak
-geliştirilmiş, tamamen offline çalışan bir soru-cevap chatbot'u.
+**Offline RAG Tabanlı Doküman Soru-Cevap Sistemi**
 
-## Kurulum
-1. `pip install -r requirements.txt`
-2. Foundry Local'i kurun ve `phi-3.5-mini`, `qwen3-embedding-0.6b` modellerini indirin
-3. `python ingest.py` ile dokümanları veritabanına yükleyin
-4. `streamlit run app.py` ile arayüzü başlatın
+Python temel konuları hakkında soru sorulabilen, dokümanlardan ilgili bilgileri bulup yerel bir LLM kullanarak cevap üreten bir soru-cevap uygulamasıdır.
+
+## Projenin Amacı
+
+Bu projede **RAG (Retrieval-Augmented Generation)** yaklaşımı kullanılarak, Python dokümanlarından soruyla ilgili bilgilerin bulunması ve bu bilgiler doğrultusunda cevap oluşturulması amaçlanmıştır.
+
+Sistem **Microsoft Foundry Local** kullanılarak yerel olarak çalışacak şekilde tasarlanmıştır.
+
+## Sistem Nasıl Çalışıyor?
+
+1. Kullanıcının sorusu alınır.
+2. Sorunun embedding'i oluşturulur.
+3. SQLite veritabanındaki doküman embeddingleriyle benzerlik karşılaştırması yapılır.
+4. **Cosine Similarity** kullanılarak soruyla en alakalı doküman parçaları bulunur.
+5. Bulunan içerikler, kullanıcı sorusuyla birlikte yerel LLM'e gönderilir.
+6. LLM, verilen doküman içeriklerine göre cevabı oluşturur.
+
+Dokümanlarda soruyla ilgili yeterli bilgi bulunmadığında sistem cevap uydurmak yerine kullanıcıya bilgi bulunamadığını bildirir.
 
 ## Kullanılan Teknolojiler
-- Microsoft Foundry Local
-- SQLite
-- Streamlit
-- Python
+
+* **Python** – Ana programlama dili
+* **Microsoft Foundry Local** – Yerel LLM ve embedding modelleri
+* **Qwen3 Embedding 0.6B** – Metinleri embedding vektörlerine dönüştürme
+* **Phi-3.5 Mini** – Cevap üretme
+* **SQLite** – Doküman ve embedding verilerini saklama
+* **NumPy** – Vektör işlemleri
+* **Cosine Similarity** – Benzerlik hesaplama
+* **Streamlit** – Web arayüzü
+
+## Proje Yapısı
+
+```text
+documents/
+├── Python dokümanları
+
+app.py
+├── Streamlit web arayüzü
+
+ingest.py
+├── Dokümanları işleme ve veritabanına aktarma
+
+retrieval.py
+├── İlgili doküman parçalarını bulma
+
+main.py
+├── Terminal üzerinden soru-cevap
+
+requirements.txt
+├── Gerekli Python paketleri
+```
+
+## Kullanım
+
+Gerekli Python paketlerini yüklemek için:
+
+```bash
+pip install -r requirements.txt
+```
+
+Web arayüzünü başlatmak için:
+
+```bash
+streamlit run app.py
+```
+
+Uygulama açıldıktan sonra Python temel konuları hakkında sorular sorulabilir ve cevap oluşturulurken kullanılan kaynaklar görüntülenebilir.
 
 ## Demo Video
 🎥 Sunum Videosunu İzle https://drive.google.com/file/d/18bpN0dGlqM3uJdrWNebZ2GeueFmFcQD-/view?usp=sharing
