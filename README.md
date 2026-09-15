@@ -14,3 +14,6 @@ geliştirilmiş, tamamen offline çalışan bir soru-cevap chatbot'u.
 - SQLite
 - Streamlit
 - Python
+
+## Demo Video
+[🎥 Sunum Videosunu İzle](./sunum_video.mp4)
