@@ -42,7 +42,6 @@ def get_top_chunks(query, top_k=3):
 
 
 def answer_query(user_question):
-    """RAG pipeline'ının tamamı: retrieval + generation."""
 
     top_chunks = get_top_chunks(user_question, top_k=3)
 
