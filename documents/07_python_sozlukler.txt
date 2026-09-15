@@ -1,0 +1,45 @@
+Python'da Sözlükler
+
+Sözlükler, verileri anahtar-değer çiftleri şeklinde saklayan bir Python veri yapısıdır. Her anahtar bir değere karşılık gelir. Sözlükler süslü parantez {} kullanılarak oluşturulur.
+
+Örneğin:
+
+student = {
+"name": "Elif",
+"age": 21,
+"department": "Computer Engineering"
+}
+
+Bu sözlükte name, age ve department anahtar; bunlara karşılık gelen değerler ise sırasıyla "Elif", 21 ve "Computer Engineering" değerleridir.
+
+Bir sözlükteki değere anahtar kullanılarak erişilebilir.
+
+Örneğin:
+
+print(student["name"])
+print(student["age"])
+
+Sözlüğe yeni bir anahtar-değer çifti eklemek için yeni bir anahtar atanabilir.
+
+Örneğin:
+
+student["gpa"] = 3.2
+
+Mevcut bir anahtarın değerini değiştirmek için aynı anahtara yeni bir değer atanabilir.
+
+Örneğin:
+
+student["age"] = 22
+
+Bir anahtar-değer çiftini silmek için del ifadesi veya pop() metodu kullanılabilir.
+
+Sözlükte bulunan anahtarları görmek için keys(), değerleri görmek için values(), anahtar ve değer çiftlerini birlikte almak için items() metodu kullanılabilir.
+
+Örneğin:
+
+for key, value in student.items():
+print(key, value)
+
+Bir anahtarın sözlük içerisinde bulunup bulunmadığını kontrol etmek için in operatörü kullanılabilir.
+
+Sözlükler özellikle birbiriyle ilişkili verileri anlamlı anahtarlarla saklamak için kullanılır. Kullanıcı bilgileri, ürün bilgileri ve yapılandırma verileri gibi birçok farklı veri sözlük kullanılarak tutulabilir.

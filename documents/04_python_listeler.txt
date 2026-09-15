@@ -1,0 +1,58 @@
+Python'da Listeler
+
+Liste, birden fazla değeri tek bir değişken içerisinde saklamak için kullanılan Python veri yapılarından biridir. Listeler farklı türlerde veriler içerebilir ve elemanların sırası korunur.
+
+Bir liste köşeli parantezler [] kullanılarak oluşturulur.
+
+Örneğin:
+
+fruits = ["apple", "banana", "orange"]
+
+Bu listenin üç elemanı vardır. Liste elemanlarına indeks numaraları kullanılarak erişilir. Python'da indeks numaraları 0'dan başlar.
+
+Örneğin:
+
+fruits = ["apple", "banana", "orange"]
+
+print(fruits[0])
+print(fruits[1])
+
+İlk elemanın indeksi 0, ikinci elemanın indeksi 1 ve üçüncü elemanın indeksi 2'dir.
+
+Listenin son elemanına negatif indeks kullanılarak da erişilebilir. -1 son elemanı, -2 sondan ikinci elemanı ifade eder.
+
+Listeler değiştirilebilir veri yapılarıdır. Bir listenin mevcut elemanı farklı bir değerle değiştirilebilir.
+
+Örneğin:
+
+fruits = ["apple", "banana", "orange"]
+fruits[1] = "banana"
+
+Listeye yeni eleman eklemek için append() metodu kullanılabilir.
+
+Örneğin:
+
+fruits = ["apple", "banana"]
+fruits.append("orange")
+
+Bir listenin belirli bir konumuna eleman eklemek için insert() metodu kullanılabilir.
+
+Bir elemanı listeden kaldırmak için remove() veya pop() metotları kullanılabilir. remove() belirli bir değeri kaldırırken, pop() belirli bir indeksteki elemanı kaldırabilir.
+
+Listenin uzunluğunu öğrenmek için len() fonksiyonu kullanılır.
+
+Örneğin:
+
+numbers = [10, 20, 30, 40]
+print(len(numbers))
+
+Listeler üzerinde for döngüsü kullanılarak tüm elemanlar sırayla işlenebilir.
+
+Örneğin:
+
+numbers = [1, 2, 3]
+
+for number in numbers:
+print(number)
+
+Listeler Python programlarında birden fazla veriyi düzenli şekilde saklamak ve bu veriler üzerinde işlem yapmak için sıkça kullanılır.

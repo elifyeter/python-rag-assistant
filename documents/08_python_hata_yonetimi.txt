@@ -1,0 +1,45 @@
+Python'da Hata Yönetimi
+
+Program çalışırken beklenmeyen durumlar nedeniyle hatalar oluşabilir. Python'da hataların programın tamamen durmasına neden olmasını önlemek ve hataları kontrol etmek için hata yönetimi mekanizmaları kullanılabilir.
+
+Python'da hata yönetimi için try, except, else ve finally ifadeleri kullanılabilir.
+
+try bloğunda hata oluşturabilecek kod bulunur. Eğer try bloğunda bir hata meydana gelirse Python ilgili except bloğunu çalıştırır.
+
+Örneğin:
+
+try:
+number = int(input("Bir sayı girin: "))
+print(number)
+except ValueError:
+print("Geçerli bir sayı girin.")
+
+Bu örnekte kullanıcı sayı yerine geçersiz bir değer girerse ValueError oluşur ve except bloğundaki mesaj gösterilir.
+
+Birden fazla hata türü farklı except blokları kullanılarak ele alınabilir.
+
+Örneğin:
+
+try:
+result = 10 / 0
+except ZeroDivisionError:
+print("Sıfıra bölme yapılamaz.")
+
+else bloğu, try bloğunda herhangi bir hata oluşmadığında çalıştırılacak kodları içerir.
+
+finally bloğu ise hata oluşsa da oluşmasa da çalıştırılmak istenen kodlar için kullanılır.
+
+Örneğin:
+
+try:
+number = int("10")
+except ValueError:
+print("Hata oluştu.")
+else:
+print("İşlem başarılı.")
+finally:
+print("İşlem tamamlandı.")
+
+Python'da hata yönetimi, kullanıcıdan alınan verilerin kontrol edilmesi, dosya işlemleri, ağ bağlantıları ve dış kaynaklarla yapılan işlemler gibi hata oluşma ihtimali bulunan durumlarda önemlidir.
+
+Hataları uygun şekilde yönetmek, programların daha güvenilir ve kontrollü çalışmasına yardımcı olur.

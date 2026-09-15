@@ -1,0 +1,45 @@
+Python'da Koşul İfadeleri
+
+Koşul ifadeleri, bir programın belirli bir koşula göre farklı işlemler yapmasını sağlar. Python'da koşul oluşturmak için if, elif ve else ifadeleri kullanılır.
+
+if ifadesi, verilen koşul doğru olduğunda çalışacak kod bloğunu belirtir.
+
+Örneğin:
+
+age = 20
+
+if age >= 18:
+print("Yetişkin")
+
+Bu örnekte age değeri 18 veya daha büyük olduğu için if bloğundaki kod çalışır.
+
+Birden fazla koşul kontrol edilmesi gerektiğinde elif kullanılabilir.
+
+Örneğin:
+
+score = 75
+
+if score >= 90:
+print("AA")
+elif score >= 70:
+print("BB")
+elif score >= 50:
+print("CC")
+else:
+print("FF")
+
+Python koşullarda karşılaştırma yapmak için çeşitli operatörler kullanır. == eşitliği, != eşit olmadığını, > büyük olduğunu, < küçük olduğunu, >= büyük veya eşit olduğunu ve <= küçük veya eşit olduğunu kontrol eder.
+
+Koşullar birleştirilmek istendiğinde and, or ve not mantıksal operatörleri kullanılabilir.
+
+and operatöründe iki koşulun da doğru olması gerekir. or operatöründe koşullardan en az birinin doğru olması yeterlidir. not operatörü ise bir koşulun sonucunu tersine çevirir.
+
+Örneğin:
+
+age = 20
+has_permission = True
+
+if age >= 18 and has_permission:
+print("İşlem yapılabilir")
+
+Python'da koşul ifadeleri programın karar vermesini sağlayan temel yapılardan biridir. Kullanıcıdan alınan verilerin kontrol edilmesi, belirli durumlarda farklı işlemlerin gerçekleştirilmesi ve programın akışının yönetilmesi gibi birçok durumda kullanılır.

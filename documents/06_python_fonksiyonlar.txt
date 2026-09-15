@@ -1,0 +1,48 @@
+Python'da Fonksiyonlar
+
+Fonksiyonlar, belirli bir işlemi gerçekleştirmek için oluşturulan ve ihtiyaç duyulduğunda tekrar kullanılabilen kod bloklarıdır. Fonksiyonlar kod tekrarını azaltır ve programın daha düzenli olmasını sağlar.
+
+Python'da fonksiyon tanımlamak için def anahtar kelimesi kullanılır.
+
+Örneğin:
+
+def greet():
+print("Merhaba")
+
+Tanımlanan bir fonksiyonu çalıştırmak için fonksiyon adı parantez ile çağrılır.
+
+greet()
+
+Fonksiyonlar parametre alabilir. Parametreler, fonksiyona dışarıdan veri göndermek için kullanılır.
+
+Örneğin:
+
+def greet(name):
+print("Merhaba", name)
+
+greet("Elif")
+
+Bu örnekte name fonksiyonun parametresidir ve fonksiyon çağrılırken "Elif" değeri gönderilmiştir.
+
+Fonksiyonlar bir değer döndürebilir. Bunun için return ifadesi kullanılır.
+
+Örneğin:
+
+def add(a, b):
+return a + b
+
+result = add(5, 3)
+
+Bu örnekte add() fonksiyonu a ve b parametrelerini toplar ve sonucu return ile geri döndürür. Dönen değer result değişkeninde saklanır.
+
+Bir fonksiyon birden fazla parametre alabilir. Parametrelerin varsayılan değerleri de tanımlanabilir.
+
+Örneğin:
+
+def greet(name="Guest"):
+print("Merhaba", name)
+
+greet()
+greet("Elif")
+
+Fonksiyonlar büyük programları daha küçük ve yönetilebilir parçalara ayırmak için kullanılır. Aynı işlemin birden fazla yerde yapılması gerektiğinde fonksiyonlar kod tekrarını önler ve programın okunabilirliğini artırır.

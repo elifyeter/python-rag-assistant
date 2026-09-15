@@ -1,0 +1,25 @@
+Python'a Giriş
+
+Python, okunması ve öğrenilmesi kolay, yüksek seviyeli ve genel amaçlı bir programlama dilidir. Web geliştirme, veri analizi, yapay zeka, makine öğrenmesi, otomasyon ve masaüstü uygulamaları gibi birçok farklı alanda kullanılabilir.
+
+Python'ın en önemli özelliklerinden biri sade bir sözdizimine sahip olmasıdır. Kod yazarken gereksiz semboller ve karmaşık yapılar az kullanılır. Python'da kod blokları süslü parantezlerle değil, girintilerle belirlenir.
+
+Python yorumlanan bir programlama dilidir. Yazılan kod Python yorumlayıcısı tarafından çalıştırılır. Python dinamik tiplidir. Bu nedenle bir değişkenin veri tipi önceden belirtilmek zorunda değildir.
+
+Python'da değişken oluşturmak için değişken adı ve atama operatörü kullanılır. Örneğin:
+
+name = "Elif"
+age = 21
+
+Bu örnekte name değişkeni bir metin, age değişkeni ise bir tam sayı değerini tutar.
+
+Python'da temel veri tipleri arasında int, float, str ve bool bulunur. int tam sayıları, float ondalıklı sayıları, str metinleri ve bool True veya False değerlerini temsil eder.
+
+Python'da ekrana çıktı vermek için print() fonksiyonu kullanılır. Kullanıcıdan veri almak için ise input() fonksiyonu kullanılabilir.
+
+Örneğin:
+
+name = input("Adınızı girin: ")
+print("Merhaba", name)
+
+Python, geniş standart kütüphanesi ve çok sayıda üçüncü taraf kütüphanesi sayesinde farklı projelerde kullanılabilir. Bu nedenle hem yeni başlayanlar hem de profesyonel yazılım geliştiricileri tarafından yaygın olarak tercih edilmektedir.

@@ -1,0 +1,61 @@
+ Python'da Dosya İşlemleri
+
+Python ile bilgisayardaki dosyalar okunabilir, oluşturulabilir ve değiştirilebilir. Dosya işlemleri özellikle metin dosyalarıyla çalışırken kullanılır.
+
+Bir dosyayı açmak için open() fonksiyonu kullanılır.
+
+Örnek:
+
+file = open("notlar.txt", "r")
+
+Buradaki "r" dosyanın okuma amacıyla açıldığını belirtir.
+
+Dosya açma modları:
+
+"r" → Dosyayı okuma amacıyla açar. Dosya mevcut değilse hata oluşur.
+
+"w" → Dosyayı yazma amacıyla açar. Dosya yoksa oluşturur. Dosya varsa mevcut içeriği silerek yeniden yazar.
+
+"a" → Dosyanın sonuna yeni içerik eklemek için kullanılır. Dosya yoksa oluşturulur.
+
+Dosyadan veri okumak için read() kullanılabilir.
+
+Örnek:
+
+file = open("notlar.txt", "r")
+content = file.read()
+print(content)
+file.close()
+
+close() fonksiyonu dosyayı kapatır.
+
+Dosyaları daha güvenli ve düzenli şekilde kullanmak için with ifadesi tercih edilir. with kullanıldığında işlem tamamlandığında dosyanın kapatılması otomatik olarak gerçekleşir.
+
+Örnek:
+
+with open("notlar.txt", "r") as file:
+content = file.read()
+print(content)
+
+Dosyaya veri yazmak için write() fonksiyonu kullanılır.
+
+Örnek:
+
+with open("notlar.txt", "w") as file:
+file.write("Python öğreniyorum.")
+
+Bir dosyanın sonuna veri eklemek için "a" modu kullanılabilir.
+
+Örnek:
+
+with open("notlar.txt", "a") as file:
+file.write("\nYeni bir not.")
+
+Dosyaları okurken encoding belirtmek, özellikle Türkçe gibi farklı karakterler içeren metinlerde önemlidir.
+
+Örnek:
+
+with open("notlar.txt", "r", encoding="utf-8") as file:
+content = file.read()
+
+Dosya işlemlerinde dosyanın doğru modda açılması önemlidir. Okuma için "r", yazma için "w", mevcut içeriğin sonuna ekleme yapmak için "a" kullanılabilir.

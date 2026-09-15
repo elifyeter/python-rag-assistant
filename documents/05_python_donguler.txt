@@ -1,0 +1,41 @@
+Python'da Döngüler
+
+Döngüler, bir kod bloğunun belirli bir koşula bağlı olarak veya belirli sayıda tekrar çalıştırılmasını sağlar. Python'da temel olarak for ve while döngüleri kullanılır.
+
+for döngüsü, bir koleksiyonun veya belirli bir aralığın elemanları üzerinde sırayla işlem yapmak için kullanılır.
+
+Örneğin:
+
+numbers = [1, 2, 3, 4, 5]
+
+for number in numbers:
+print(number)
+
+Bu kodda for döngüsü listedeki her elemanı sırayla number değişkenine atar ve print() fonksiyonu ile ekrana yazdırır.
+
+Belirli bir sayı aralığında döngü oluşturmak için range() fonksiyonu kullanılabilir.
+
+Örneğin:
+
+for i in range(5):
+print(i)
+
+Bu kod 0'dan başlayarak 4'e kadar olan sayıları ekrana yazdırır.
+
+while döngüsü, verilen koşul True olduğu sürece çalışmaya devam eder.
+
+Örneğin:
+
+count = 0
+
+while count < 5:
+print(count)
+count += 1
+
+Bu döngüde count değeri 5'ten küçük olduğu sürece kod çalışır. Her tekrar sonrasında count değeri bir artırılır.
+
+Döngüyü erken sonlandırmak için break ifadesi kullanılabilir. break çalıştırıldığında döngü tamamen sona erer.
+
+continue ifadesi ise döngünün mevcut tekrarını atlayarak bir sonraki tekrara geçilmesini sağlar.
+
+Döngüler, listeler ve diğer veri yapıları içerisindeki elemanları işlemek, tekrarlanan işlemleri gerçekleştirmek ve belirli koşullar sağlanana kadar işlem yapmak için kullanılır.

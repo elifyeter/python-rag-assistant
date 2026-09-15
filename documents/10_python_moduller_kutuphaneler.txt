@@ -1,0 +1,62 @@
+Python'da Modüller ve Kütüphaneler
+
+Python'da kodları daha düzenli ve tekrar kullanılabilir hale getirmek için modüller ve kütüphaneler kullanılabilir.
+
+Modül, Python kodlarının bulunduğu bir dosyadır. Bir Python dosyasındaki fonksiyonlar ve değişkenler başka bir Python dosyasından kullanılabilir.
+
+Bir modülü programa dahil etmek için import ifadesi kullanılır.
+
+Örnek:
+
+import math
+
+print(math.sqrt(25))
+
+Burada math Python'un standart kütüphanelerinden biridir. sqrt() fonksiyonu bir sayının karekökünü hesaplamak için kullanılır.
+
+Bir modül içerisinden belirli bir fonksiyonu almak için from ... import yapısı kullanılabilir.
+
+Örnek:
+
+from math import sqrt
+
+print(sqrt(25))
+
+Python'da birçok standart kütüphane bulunur. Bu kütüphaneler Python ile birlikte gelir ve ayrıca yüklenmeleri gerekmez.
+
+Örneğin:
+
+import random
+
+number = random.randint(1, 10)
+print(number)
+
+random modülü rastgele değerler üretmek için kullanılabilir.
+
+Kendi modülümüzü de oluşturabiliriz. Örneğin hesaplama.py adında bir dosyada aşağıdaki fonksiyon bulunabilir:
+
+def topla(a, b):
+return a + b
+
+Başka bir Python dosyasında bu modül şu şekilde kullanılabilir:
+
+import hesaplama
+
+sonuc = hesaplama.topla(5, 3)
+print(sonuc)
+
+Python'da standart kütüphanelerin yanında üçüncü taraf kütüphaneler de kullanılabilir. Bu kütüphaneler Python ile birlikte gelmez ve genellikle pip kullanılarak yüklenir.
+
+Örneğin:
+
+pip install requests
+
+Kütüphane yüklendikten sonra Python programında import edilerek kullanılabilir.
+
+Örnek:
+
+import requests
+
+Modül ve kütüphaneler kullanmak, programın tüm kodlarını tek bir dosyada toplamak yerine kodu parçalara ayırmaya yardımcı olur. Bu durum kodun daha düzenli, tekrar kullanılabilir ve yönetilebilir olmasını sağlar.
+
+Özet olarak import ifadesi bir modülü programa dahil etmek için kullanılır. from ... import belirli bir öğeyi doğrudan almak için kullanılabilir. Python standart kütüphaneler sunar ve ihtiyaç halinde üçüncü taraf kütüphaneler pip ile yüklenebilir.

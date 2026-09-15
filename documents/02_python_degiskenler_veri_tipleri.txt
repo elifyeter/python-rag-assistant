@@ -1,0 +1,43 @@
+Python'da Değişkenler ve Veri Tipleri
+
+Değişkenler, program içerisinde verileri saklamak ve bu verilere daha sonra erişmek için kullanılır. Python'da değişken oluştururken veri tipini ayrıca belirtmek gerekmez. Python, değişkene atanan değere göre veri tipini otomatik olarak belirler.
+
+Örneğin:
+
+name = "Elif"
+age = 21
+height = 1.65
+is_student = True
+
+Bu örnekte name değişkeni string, age değişkeni integer, height değişkeni float ve is_student değişkeni boolean veri tipindedir.
+
+Python'daki temel veri tiplerinden biri int'tir. int, tam sayıları temsil eder. Örneğin 10, -5 ve 100 birer int değeridir.
+
+float veri tipi ondalıklı sayıları temsil eder. Örneğin 3.14, 10.5 ve -2.7 float değerleridir.
+
+str veri tipi metinleri temsil eder. Metinler tek veya çift tırnak içerisinde yazılabilir.
+
+Örneğin:
+
+name = "Python"
+message = 'Merhaba'
+
+bool veri tipi iki farklı değer alabilir: True veya False. Genellikle bir koşulun doğru veya yanlış olduğunu belirtmek için kullanılır.
+
+Bir değişkenin veri tipini öğrenmek için type() fonksiyonu kullanılabilir.
+
+Örneğin:
+
+age = 21
+print(type(age))
+
+Python'da bir değerin veri tipi başka bir veri tipine dönüştürülebilir. Bu işlem type conversion olarak adlandırılır. int(), float(), str() ve bool() gibi fonksiyonlar veri tipi dönüşümünde kullanılabilir.
+
+Örneğin:
+
+age = "21"
+number = int(age)
+
+Bu kodda string olarak saklanan "21" değeri int veri tipine dönüştürülür.
+
+Değişkenler Python programlarının temel yapı taşlarından biridir. Farklı veri tipleri kullanılarak sayılar, metinler, doğru-yanlış değerleri ve diğer veriler program içerisinde saklanabilir ve işlenebilir.
