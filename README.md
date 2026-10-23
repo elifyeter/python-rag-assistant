@@ -69,6 +69,3 @@ streamlit run app.py
 ```
 
 Uygulama açıldıktan sonra Python temel konuları hakkında sorular sorulabilir ve cevap oluşturulurken kullanılan kaynaklar görüntülenebilir.
-
-## Demo Video
-🎥 Sunum Videosunu İzle https://drive.google.com/file/d/18bpN0dGlqM3uJdrWNebZ2GeueFmFcQD-/view?usp=sharing
